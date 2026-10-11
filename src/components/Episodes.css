@@ -1,0 +1,160 @@
+.episodes-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 30px 60px 30px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.season-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.season-tab-btn {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  padding: 10px 24px;
+  border-radius: 6px;
+  background: rgba(18, 9, 14, 0.7);
+  color: #cccccc;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.season-tab-btn:hover {
+  border-color: #e50914;
+  color: #ffffff;
+}
+
+.season-tab-btn.active {
+  background: #e50914;
+  border-color: #ff3344;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+.season-meta-box {
+  background: rgba(15, 7, 12, 0.85);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  backdrop-filter: blur(14px);
+  padding: 2rem;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+}
+
+.meta-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-left h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.year-pill, .ep-count {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(229, 9, 20, 0.15);
+  border: 1px solid rgba(229, 9, 20, 0.4);
+  color: #ff6677;
+  font-weight: 700;
+}
+
+.season-summary {
+  font-family: 'Outfit', sans-serif;
+  color: #bbbbbb;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.episode-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: rgba(18, 9, 14, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.4rem;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.episode-row:hover {
+  border-color: rgba(229, 9, 20, 0.5);
+  transform: translateX(4px);
+  background: rgba(28, 11, 18, 0.85);
+}
+
+.ep-num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.8rem;
+  color: #e50914;
+  min-width: 40px;
+  font-weight: 700;
+}
+
+.ep-details {
+  flex: 1;
+}
+
+.ep-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ep-row-header h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.ep-time {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  color: #888888;
+}
+
+.ep-details p {
+  font-family: 'Outfit', sans-serif;
+  color: #aaaaaa;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .episodes-section {
+    padding: 90px 15px 40px 15px;
+  }
+
+  .episode-row {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .ep-num {
+    font-size: 1.3rem;
+  }
+}

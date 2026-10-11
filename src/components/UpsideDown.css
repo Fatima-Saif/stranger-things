@@ -1,0 +1,125 @@
+.upsidedown-section {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 30px 60px 30px;
+  box-sizing: border-box;
+  background: radial-gradient(circle at center, #1b0610 0%, #0d0307 70%, #000000 100%);
+  color: #ffffff;
+  transition: filter 0.15s ease;
+}
+
+.upsidedown-section.flicker-active {
+  filter: invert(0.85) hue-rotate(180deg) brightness(1.5);
+}
+
+.portal-container {
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+}
+
+.dimension-badge {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #ff3344;
+  background: rgba(229, 9, 20, 0.2);
+  border: 1px solid rgba(229, 9, 20, 0.4);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.portal-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #e50914;
+  text-shadow:
+    0 0 15px rgba(229, 9, 20, 0.9),
+    0 0 35px rgba(229, 9, 20, 0.6);
+  letter-spacing: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.portal-desc {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  color: #cccccc;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.portal-interactive-box {
+  margin-bottom: 3.5rem;
+}
+
+.flicker-btn {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.05rem;
+  padding: 14px 32px;
+  border-radius: 8px;
+  background: #e50914;
+  color: #ffffff;
+  border: 1px solid #ff4d5a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+}
+
+.flicker-btn:hover {
+  background: #ff1c28;
+  box-shadow: 0 0 40px rgba(229, 9, 20, 0.9);
+  transform: translateY(-2px);
+}
+
+.threat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.threat-card {
+  background: rgba(18, 9, 14, 0.85);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  backdrop-filter: blur(12px);
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.threat-level {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #ff3344;
+  margin-bottom: 0.5rem;
+}
+
+.threat-card h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.threat-card p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+  color: #aaaaaa;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .upsidedown-section {
+    padding: 90px 15px 40px 15px;
+  }
+}

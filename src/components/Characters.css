@@ -1,0 +1,195 @@
+.characters-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 30px 60px 30px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #e50914;
+  letter-spacing: 3px;
+  text-shadow: 0 0 14px rgba(229, 9, 20, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-family: 'Outfit', sans-serif;
+  color: #aaaaaa;
+  font-size: 1.1rem;
+}
+
+.characters-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.char-card {
+  background: rgba(18, 9, 14, 0.75);
+  border: 1px solid rgba(229, 9, 20, 0.25);
+  backdrop-filter: blur(12px);
+  padding: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.char-card:hover {
+  border-color: #e50914;
+  box-shadow: 0 4px 20px rgba(229, 9, 20, 0.35);
+}
+
+.char-card.active {
+  border-color: #ff2d3b;
+  background: rgba(35, 12, 20, 0.85);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.5);
+}
+
+.char-card-header h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.char-alias {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  color: #e50914;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.char-actor {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  color: #999999;
+  margin: 8px 0 12px 0;
+}
+
+.char-pill {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #00ffaa;
+  background: rgba(0, 255, 170, 0.1);
+  border: 1px solid rgba(0, 255, 170, 0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.char-detail-panel {
+  background: rgba(15, 7, 12, 0.85);
+  border: 1px solid rgba(229, 9, 20, 0.4);
+  backdrop-filter: blur(16px);
+  padding: 2.2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+  min-height: 400px;
+}
+
+.detail-tag {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e50914;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.detail-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.detail-quote {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color: #ff737d;
+  font-size: 1.15rem;
+  border-left: 3px solid #e50914;
+  padding-left: 1rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.detail-info-block {
+  margin-bottom: 1.2rem;
+}
+
+.detail-info-block h4 {
+  font-family: 'Outfit', sans-serif;
+  color: #e50914;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.4rem;
+}
+
+.detail-info-block p {
+  font-family: 'Outfit', sans-serif;
+  color: #dddddd;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.detail-meta {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+.status-highlight {
+  color: #00ffaa;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 992px) {
+  .characters-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .char-detail-panel {
+    order: -1;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .characters-section {
+    padding: 90px 15px 40px 15px;
+  }
+
+  .char-detail-panel {
+    padding: 1.4rem;
+  }
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a2a"/>
+      <stop offset="100%" stop-color="#8a0008"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glowing Emblem Background -->
+  <rect width="100" height="100" rx="20" fill="#080305"/>
+  <rect x="3" y="3" width="94" height="94" rx="17" fill="none" stroke="#e50914" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Stylized Retro ST Monogram / Monster Rift Shape -->
+  <g filter="url(#neon-glow)">
+    <!-- Top & Bottom Frame Lines -->
+    <line x1="18" y1="20" x2="82" y2="20" stroke="#e50914" stroke-width="3" stroke-linecap="round"/>
+    <line x1="18" y1="80" x2="82" y2="80" stroke="#e50914" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Bold Interlocked ST Silhouette -->
+    <!-- S -->
+    <path d="M 44 32 C 44 27 34 27 30 29 C 24 31 22 36 24 41 C 26 46 38 48 40 52 C 43 57 39 65 31 65 C 25 65 22 61 21 57" 
+          fill="none" stroke="#ff3344" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- T -->
+    <path d="M 52 32 L 80 32 M 66 32 L 66 65" 
+          fill="none" stroke="#ff1a2a" stroke-width="4.5" stroke-linecap="round"/>
+          
+    <!-- Upside Down Rift Spike -->
+    <polygon points="50,68 53,74 50,77 47,74" fill="#ff4d5a"/>
+  </g>
+</svg>

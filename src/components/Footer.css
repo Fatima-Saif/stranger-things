@@ -1,0 +1,112 @@
+.st-footer {
+  width: 100%;
+  background: rgba(8, 4, 6, 0.95);
+  border-top: 1px solid rgba(229, 9, 20, 0.25);
+  padding: 3rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  position: relative;
+  z-index: 50;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-logo {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.4rem;
+  color: #e50914;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.footer-desc {
+  font-family: 'Outfit', sans-serif;
+  color: #888888;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav span {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.92rem;
+  color: #cccccc;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.footer-nav span:hover {
+  color: #e50914;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.5rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.88rem;
+  color: #777777;
+}
+
+.powered-tag {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  font-weight: 500;
+}
+
+.falcon-link {
+  color: #ff3344;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.falcon-link:hover {
+  color: #ffffff;
+  background: #e50914;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.8);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
